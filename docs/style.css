@@ -245,3 +245,42 @@ align-items: center;
         display: inline-block;
         padding:  0;       
     }
+
+    /*activities*/
+    #activities{
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 20px;
+    }
+    h2{
+       margin: 20px;
+    }
+    .column-2{
+        
+        display:flex;
+        flex-wrap: wrap;
+        align-content:space-between;
+        padding-left: 20px;
+    
+        justify-content: space-between;
+    }
+    .little-activ{
+        width: 300px;
+        height: 180px;
+        border-radius: 20px 20px 0 0;
+    }
+    .big-activ{
+        width: 300px;
+        height: 450px;
+        border-radius: 20px 20px 0 0;
+    }
+    .action>a{
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+        font-weight: 700;
+          
+    }
+    .action>a>p{
+        padding-top: 20px;
+    }
