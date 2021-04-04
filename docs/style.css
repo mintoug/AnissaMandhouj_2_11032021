@@ -123,3 +123,125 @@ align-items: center;
     padding: 2em;
     color: #0065FC;
 }
+
+/* star icons*/ 
+.star{
+    color: #0065FC;
+}
+.star-off>.fas{
+    color: #DEEBFF;
+}
+
+/* hebergement  section*/
+#hebergement{
+    background-color: #F2F2F2;
+    width: 60vw;
+     margin-left: 20px; 
+}
+#hebergement>h2{
+    margin: -10px 20px;
+    padding: 2rem;
+}
+.cards{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+        
+}
+.card{
+    margin: 10px; 
+    background-color: white;
+    border-radius: 10px;
+    width: 16vw;
+    padding: 10px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+}
+.card>a{
+    text-decoration: none;
+    color: black;
+}
+.img>img{
+    width: 100%;
+    height:100px;
+    border-radius: 10px 10px 0 0;
+}
+.card>a>h3{
+    margin: 10px 0;
+}
+.card>a>p{
+    margin: 10px 0;
+}
+#hebergement>h3{
+    padding: 2rem;
+   
+}
+.euro{
+    font-weight: 800;
+}
+
+/* to align hebergement and popular*/
+.container-align{
+    display: flex;
+    justify-content: space-between;
+    }
+
+/**** section popular***/
+.contain{
+    display: flex;
+    justify-content: space-between;   
+    
+    }    
+    .title{
+    display: flex;
+    align-items: center;  
+    justify-content: space-evenly;  
+    }
+
+    #popular{
+    width: 30vw;
+    background-color: #F2F2F2;
+    padding: 0 50px;
+    margin-right: 20px;
+    border-radius: 1em;
+    }
+    .cards-2{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #F2F2F2;
+       
+    }
+    .img-2{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .img-2>img{
+        width:150px;
+        max-height: 150px;
+        border-radius: 1em 0 0 1em;
+       
+
+                  
+    }
+    .comment{
+       padding:  10px;
+       margin-top: 5px;
+    }
+    .comment>p{
+        padding: 20px 10px;
+    }
+    .card-p{
+        background-color: white;
+        margin: 20px -20px; 
+        border-radius: 1em; 
+        box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+        
+            
+    }
+    .card-p>a{
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        padding:  0;       
+    }
