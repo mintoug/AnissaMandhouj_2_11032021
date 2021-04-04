@@ -284,3 +284,29 @@ align-items: center;
     .action>a>p{
         padding-top: 20px;
     }
+     /* footer*/
+     footer{
+        font-family: sans-serif;
+        background-color: #F2F2F2;
+        display: flex;
+        justify-content:space-around;
+        padding :40px 20Px;
+        margin-top: 50px;
+    }
+    .footer-link{
+        display: grid;
+        padding-top: 1rem;
+        
+    }
+    
+    .footer-link>a{
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+        font-size: small;
+        font-weight: 400;
+        font-size: medium;
+        line-height: 30px;
+        
+
+    }
