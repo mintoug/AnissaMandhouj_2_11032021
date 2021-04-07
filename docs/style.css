@@ -16,19 +16,32 @@ header{
     justify-content: space-between;
 }
 #logo{
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  padding-left: 2rem;
+float:left;
+margin-top: 2em;
+margin-left: 2em;
+}
+nav{
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
 }
 
-ul{
+nav>ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+   
+}
+#sign-up{
+   
+    display: inline;
+    text-decoration: none;
+    margin-top: em;
+    margin-right: 2em;
+    color: #0065FC;
 }
 nav>ul>li{
     list-style: none; 
-    padding: 3em 2em;
+   margin: 2em  ; 
 
 }
 nav>ul>li>a{
@@ -43,6 +56,12 @@ nav>ul>li>a :hover{
 #black{
     color: black;
 }
+.sign-up{
+    text-decoration: none;
+    font-weight: 500;
+    color:#0065FC;
+
+}
 /*  search and filter***/
 h1{
     padding: 2rem;
@@ -54,11 +73,12 @@ h1{
 #iconemap {
     font-size: 25px;
     background-color: #F2F2F2;
-    border-radius:50%;
-    border-color: #DEEBFF;
-    padding: 1em 1em;
-    width: 3em;
+    margin-left: 20px;
+        padding: 0.5em;
+    width: 2em;
+    height: 1em;
     text-align: center;
+    
 }
 .localize{
     height: 3rem;
@@ -77,11 +97,14 @@ h1{
 .value-2{
     display: none;
 }
+h3{
+    margin: 20Px;
+}
 #filter{
     display: flex;
     justify-content: space-between;
-    padding: 2em;
-    width: 80vw;
+    padding: 1em;
+    width: 80%;
 }
 .block-filter{
     display: flex;
@@ -95,24 +118,27 @@ color: #0065FC;
 background-color: #DEEBFF;
 border-radius: 50%;
 width: 3em;
-height: 3em;
+height: 2.8em;
 display: flex;
 justify-content: center;
 align-items: center;
+position: relative;
+left:-0.5em;
 }
-.item-filter>button{
+.block-filter{
     height: 3rem;
-    width: 9rem;  
+    width:max-content; 
     border-radius: 2em ;
-    border :1px solid #0065FC ;
-    border-left: hidden;
+    border :1px solid #DEEBFF ;
     color: black;
-    cursor: pointer;
+    cursor: pointer; 
+    padding: 0 10px;   
 }
 
-.item-filter>button:hover{
-    background-color: #0065FC;
-    color: white;
+
+.block-filter:hover{
+    border: 1px solid #0065FC;
+    
 }
 .info{
     display: flex;
@@ -208,7 +234,10 @@ align-items: center;
         display: flex;
         flex-wrap: wrap;
         background-color: #F2F2F2;
-       
+           
+    }
+    .card-p{
+        max-width: 100%;
     }
     .img-2{
         display: flex;
@@ -218,9 +247,7 @@ align-items: center;
     .img-2>img{
         width:150px;
         max-height: 150px;
-        border-radius: 1em 0 0 1em;
-       
-
+        border-radius: 1em 0 0 1em; 
                   
     }
     .comment{
@@ -235,8 +262,7 @@ align-items: center;
         margin: 20px -20px; 
         border-radius: 1em; 
         box-shadow: 0 1px 10px rgba(0,0,0,0.2);
-        
-            
+              
     }
     .card-p>a{
         text-decoration: none;
@@ -273,6 +299,11 @@ align-items: center;
         height: 450px;
         border-radius: 20px 20px 0 0;
     }
+    .action{
+        box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+        border-radius: 20px;
+            
+    }
     .action>a{
         text-decoration: none;
         color: black;
@@ -281,7 +312,7 @@ align-items: center;
           
     }
     .action>a>p{
-        padding-top: 20px;
+        padding: 15px;
     }
      /* footer*/
      footer{
@@ -312,42 +343,66 @@ align-items: center;
  /******************MEDIA QUERIES*********/
   /**************for mobiles( iphone 8*******/ 
 
-  @media  (max-width: 375px)
+  @media screen and (max-width: 376px)
 
-  {
-          header {
-              display: flex;
-              flex-wrap: wrap;             
-          }
-          nav>ul{
-           display: flex;
-           flex-wrap: wrap-reverse;
-          }                
+  {     header{
+      display: grid;
+  }
+
+        #logo{
+           height: 3rem ;
+           width: 3rem;
+           margin-top: 4em;
+        }
+                         
           h1{
               font-size:20px;                    
-          }        
-          .value-1{
-              display: none;
-          }
-          .value-2{
-              display: inherit;
-          }        
-          #filter{
+          } 
+          #sign-up{
+              display: block;
+              margin-right: 3em;
+              margin-top: 3em;
+              position: absolute;
+              top: 2em;
+              right: 3em;
+          } 
+          nav{
+              display:flex;
+              flex-direction: column-reverse;
+              width: auto;
+          }  
+          nav>ul{
+              
               display: flex;
-              flex-wrap: wrap;                   
-          }        
-          #filter>.block-filter{
-             margin: 20px;
+               display: inline-flexbox;
+              width: 100%;
+            margin-top: 3em;
+        
+              
           }
-          .item-filter>button{
-              height: 3rem;
-          }        
+        #search{
+            width:100%
+        }
+               
+          #filter{
+            display: flex;
+              width: auto;
+              flex-wrap: wrap;
+            
+          }  
+          #filter>h3{
+              display: block;
+             width: 150px;
+          }      
+          
           .container-align{
               display: flex;
               flex-wrap: wrap-reverse;
           }
           #popular{
-              width: 100%;
+              width: 100vw;
+              margin-right: 0;
+              
           }
           .title>h2{
               font-size: large;            
@@ -359,8 +414,9 @@ align-items: center;
               margin: 30px 0;
           }
           #hebergement{
-             width: 80vw;
+             width: 100vw;
              background-color: white;
+             
           }
           .cards{
               display: grid;
@@ -390,17 +446,17 @@ align-items: center;
               max-height: 180px;
           }
           footer{
-              max-width: 100vw;
+              width: 100vw;
               display:grid;
               justify-content: space-around; 
           }
           .item-footer{
-              margin: 30px 0;
+              margin:10px 0;
           }
   }
   
 /******for tablets*********/
-@media (min-width:376px) and (max-width: 769px) 
+@media screen and (min-width:376px) and (max-width: 769px) 
 { 
     header {
         display: flex;
@@ -468,4 +524,16 @@ align-items: center;
     display: grid;
     }
    
+}
+
+@media (max-width 1259px) and (min-width:770px)
+ {
+    #sign-up
+    {display: block;
+    
+    }
+    nav{
+        display: grid;
+    }
+
 }

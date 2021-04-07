@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/406da18a0b.js" crossorigin="anonymous" defer></script>
     <title>RESERVIA</title>
@@ -22,9 +23,11 @@
             <ul>
                 <li><a href="#hebergement">Hebergement</a></li>
                 <li><a href="#activities"><span id="black">Activités</span></a></li>
-                <li><a href="#">S'inscrire</a></li>
+               
             </ul>
+            
         </nav>
+        <a id="sign-up" href="#">S'inscrire</a>
 
     </header>
     <!--section de research -->
@@ -32,43 +35,33 @@
     <h1 id="find">Trouvez votre hébergement pour des vacances de rêve</h1>
     <p id="local">En plein centre ville ou en pleine nature</p>
 
-    <form id="search" method="POST" action="traitement#">
+    <div id="search" method="POST" action="traitement#">
         <span id="iconemap"><i class="fas fa-map-marker-alt"></i></span>
         <input type="text" placeholder="Marseille, France" class="localize">
         <button type="submit"><span class="value-1">Rechercher</span>
             <span class="value-2"><i class="fas fa-search"></i></span></button>
 
-
-
-    </form>
+        </div>
 
     <!--section filter-->
-
+    <h3>filtres</h3>
     <div id="filter">
-        <h3>filtres</h3>
+       
         <div class="block-filter">
             <div class="icon-filter"><i class="fas fa-money-bill-wave-alt"></i></div>
-            <span class="item-filter"><button disabled="disabled">
-                    Economique
-                </button></span>
+            <div class="item-filter"> Economique </div>
         </div>
         <div class="block-filter">
             <div class="icon-filter"><i class="fas fa-child"></i></div>
-            <span class="item-filter"><button disabled="disabled">
-                    Familial
-                </button> </span>
+            <div class="item-filter"> Familial </div>
         </div>
         <div class="block-filter">
             <div class="icon-filter"><i class="fas fa-heart"></i></div>
-            <span class="item-filter"><button disabled="disabled">
-                    Romantique
-                </button></span>
+            <div class="item-filter"> Romantique </div>
         </div>
         <div class="block-filter">
             <div class="icon-filter"><i class="fas fa-dog"></i></div>
-            <span class="item-filter"> <button disabled="disabled">
-                    Animaux autorisés
-                </button></span>
+            <div class="item-filter"> Animaux autorisés </div>
         </div>
     </div>
     <!--info-->
@@ -267,7 +260,7 @@
          <div class="action">
              <a href="#">
                  <img class="little-activ" src="./images/activites/3_medium/iles_du_Frioul.jpg" alt="une plage ">
-                 <p>les Du Frioul</p>
+                 <p>Îles Du Frioul</p>
              </a>
          </div>
      </div>
