@@ -21,47 +21,53 @@ header{
 }
 #logo{
 float:left;
-padding: 30px;
+padding: 30px 0;
+
 }
 nav{
  display: flex;
  justify-content: space-around;
  width: 100vw;
+ height: 200px;
  }
 #sign-up{
    font-weight: bold;
     color: #0065FC;
+    justify-self: end;
+    padding-right: 10px;
+    margin-top: 3em;
 }
 nav>a{
-    align-content: flex-end;
-    margin-top: 3em;
     font-weight: bold;
+    height: 50px;
 }
 nav>a:hover{
-        color: #0065FC;
+    color: #0065FC;
 }
 /*  search and filter***/
 h1{
-    padding: 2rem;
     font-size: 1.5em;
+    margin: 0 20px;
 }
 #local{
     padding: 2em;
 }
 #iconemap {
+    display: inline-block;
     font-size: 20px;
     background-color: #F2F2F2;
     margin-left: 20px;
     padding: 0.5em;
     width: 2em;
-    height: 1em;
+    height:50px;
     text-align: center;
     border-radius: 10px 0 0 10px;
 }
 .localize{
-    height: 3rem;
+    height: 50px;
     border: 1px solid #F2F2F2;
 }
+
 #search>button{
     padding: 1em;
     background-color: #0065FC;
@@ -69,6 +75,7 @@ h1{
     font-weight: 600;
     border-radius: 0px 10px 10px 0px;
     border: none;
+    height: 50px;
 }
 .value-2{
     visibility: hidden;
@@ -374,7 +381,7 @@ left:-0.5em;
            display: grid;
            grid-template-columns: repeat(2, 1fr);
            grid-template-rows: repeat(2, 1fr);
-           margin: 2em;
+           padding-left: 2em;
        }
        #sign-up{
           grid-area: 2/3/1/2;
@@ -390,15 +397,27 @@ left:-0.5em;
        
     @media screen and (max-width:500px){
         .hebergement ,.activities{
-            border-bottom: 2px solid #F2F2F2;
+            border-bottom: 4px solid #F2F2F2;
+            position: relative;
+            left: -20px;
+            margin-bottom: -20px;
+            text-align: center;
         }
         .hebergement:hover{
-            border-bottom: 2px solid #0065FC;
+            border-bottom: 4px solid #0065FC;
             color: #0065FC;
         }
         .activities:hover{
-            border-bottom: 2px solid #0065FC;
+            border-bottom: 4px solid #0065FC;
             color: #0065FC;
+        }
+        h1{
+            font-weight: 900;
+            margin-left: 20px;
+        }
+        #search>button{
+            border-radius: 10px;
+            width: auto;
         }
         .value-2{
             visibility: visible;
@@ -411,6 +430,10 @@ left:-0.5em;
         }
         #filter{
             min-height: 15em;
+            width: auto;
+        }
+        .item-filter{
+            padding-right: 20px;
         }
         .block-filter{
             margin: 0;
@@ -439,7 +462,9 @@ left:-0.5em;
             width: 90vw;
             margin-left: 1em;
         }
-        
+        .action>a{
+            width: 100%;
+        }        
         .cards{
             justify-content: center;
         }
