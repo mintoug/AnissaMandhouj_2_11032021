@@ -37,12 +37,16 @@ nav{
     padding-right: 10px;
     margin-top: 3em;
 }
+.activities, .hebergement{
+    margin-top: 50px;
+}
 nav>a{
     font-weight: bold;
     height: 50px;
 }
 nav>a:hover{
     color: #0065FC;
+    border-top: 4px solid #0065FC;
 }
 /*  search and filter***/
 h1{
@@ -59,7 +63,7 @@ h1{
     margin-left: 20px;
     padding: 0.5em;
     width: 2em;
-    height:50px;
+    height:52px;
     text-align: center;
     border-radius: 10px 0 0 10px;
 }
@@ -383,9 +387,13 @@ left:-0.5em;
            grid-template-rows: repeat(2, 1fr);
            padding-left: 2em;
        }
+       nav>a:hover{
+           border-top:0 none ;
+       }
        #sign-up{
           grid-area: 2/3/1/2;
           align-content: center;
+          padding-right: 30px;
           }
        .hebergemnent{
            grid-area: 1/2/2/3;          
@@ -402,18 +410,16 @@ left:-0.5em;
             left: -20px;
             margin-bottom: -20px;
             text-align: center;
+            margin-top: 0;
         }
-        .hebergement:hover{
-            border-bottom: 4px solid #0065FC;
-            color: #0065FC;
-        }
-        .activities:hover{
+        .hebergement:hover ,.activities:hover {
             border-bottom: 4px solid #0065FC;
             color: #0065FC;
         }
         h1{
-            font-weight: 900;
+            font-weight: bold;
             margin-left: 20px;
+            font-size: 25px;
         }
         #search>button{
             border-radius: 10px;
