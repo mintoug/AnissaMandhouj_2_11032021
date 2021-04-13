@@ -1,118 +1,112 @@
 /*general*/
 *, ::before, ::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 body{
-    background-color: white;
-    font-family: Raleway, sans-serif;
+background-color: white;
+font-family: Raleway, sans-serif;
 }
 a{
-    text-decoration: none;
-    color: black;
+text-decoration: none;
+color: black;
 }
 
 /* Header*/
 header{
-    
-    display: flex;
-    justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 #logo{
 float:left;
 padding: 30px 0;
 margin-top: 30px;
-
 }
 nav{
- display: flex;
- justify-content: space-between;
- width: 950vw;
- height: 200px;
- margin: 0 2.5vw;
- }
+display: flex;
+justify-content: space-between;
+width: 950vw;
+height: 200px;
+margin: 0 2.5vw;
+}
 #sign-up{
-   font-weight: bold;
-    color: #0065FC;
-    justify-self: end;
-    padding-right: 10px;
-    margin-top: 3em;
-    
+font-weight: bold;
+color: #0065FC;
+justify-self: end;
+padding-right: 10px;
+margin-top: 3em;
 }
 .activities,.hebergement{
-    margin-top: 50px;
+margin-top: 50px;
 }
 nav>a{
-    font-weight: bold;
-    height: 50px;
-    padding-top: 30px;
+font-weight: bold;
+height: 50px;
+padding-top: 30px;
 }
 nav>a:hover{
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
-   
+color: #0065FC;
+border-top: 2px solid #0065FC;
 }
 /*  search and filter***/
 h1{
-    font-family: sans-serif;
-    font-size: 25px;
-    margin: 0 20px;
+font-family: sans-serif;
+font-size: 25px;
+margin: 0 20px;
 }
 #local{
-    padding: 2em;
+padding: 2em;
 }
 #iconemap {
-    display: inline-block;
-    font-size: 20px;
-    background-color: #F2F2F2;
-    margin-left: 20px;
-    padding: 0.5em;
-    width: 2em;
-    height:52px;
-    text-align: center;
-    border-radius: 10px 0 0 10px;
+display: inline-block;
+font-size: 20px;
+background-color: #F2F2F2;
+margin-left: 20px;
+padding: 0.5em;
+width: 2em;
+height:51px;
+text-align: center;
+border-radius: 10px 0 0 10px;
 }
 .localize{
-    height: 50px;
-    width: 200px;
-    border: 1px solid #F2F2F2;
-   position: relative;
-   bottom:-2px;
-   
+height: 50px;
+width: 200px;
+border: 1px solid #F2F2F2;
+position: relative;
+bottom:-2px;
 }
 .localize::placeholder{
-    font-weight: bold;
+font-weight: bold;
 }
 input{
-    font-size: 15px;
-    padding: 20px;
-    font-weight: 800;
+font-size: 15px;
+padding: 20px;
+font-weight: 800;
 }
 #search>button{
-    padding: 1em;
-    background-color: #0065FC;
-    color: white;
-    font-weight: 600;
-    border-radius: 0px 10px 10px 0px;
-    border: none;
-    height: 50px;
-    
+padding: 1em;
+background-color: #0065FC;
+color: white;
+font-weight: 600;
+border-radius: 0px 10px 10px 0px;
+border: none;
+height: 50px;
 }
 .value-2{
-    visibility: hidden;
+visibility: hidden;
 }
 h3{
-    margin: 20Px;
+margin: 20Px;
 }
 #filter{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    width: 80%;
+display: flex;
+justify-content: space-between;
+padding: 30px;
+width: 80%;
 }   
 .item-filter{
-    font-weight: bold;
+font-weight: bold;
 } 
 .icon-filter{
 color: #0065FC;
@@ -127,68 +121,69 @@ position: relative;
 left: -20px;
 }
 .block-filter{
-    display: flex;
-    align-items: center;
-    height: 3rem;
-    width:max-content; 
-    border-radius: 2em ;
-    border :1px solid #DEEBFF ;
-    color: black;
-    padding: 10px;
+display: flex;
+align-items: center;
+height: 3rem;
+width:max-content; 
+border-radius: 2em ;
+border :1px solid #DEEBFF ;
+color: black;
+padding: 10px;
 }
 .block-filter:hover{
-    border: 1px solid #0065FC;
+border: 1px solid #0065FC;
 }
 .info{
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
 }
 .icon-info{
-    padding: 2em;
-    color: #0065FC;
+padding: 2em;
+color: #0065FC;
 }
 
 /* star icons*/ 
 .star{
-    color: #0065FC;
+color: #0065FC;
 }
 .star-off>.fas{
-    color: #DEEBFF;
+color: #DEEBFF;
 }
 
 /* hebergement  section*/
 #hebergement{
-    background-color: #F2F2F2;
-    width: 60vw;
-     border-radius: 1rem;
+background-color: #F2F2F2;
+width: 60vw;
+border-radius: 1rem;
 }
 #hebergement>h2{
-    margin: -10px 20px;
-    padding: 2rem;
+margin: -10px 20px;
+padding: 2rem;
 }
 .cards{
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+height: auto;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
 }
 .card{
-    margin: 1rem 0; 
-    background-color: white;
-    border-radius: 10px;
-    width: 16vw;
-    padding: 10px;
-    box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+margin: 1rem 0; 
+background-color: white;
+border-radius: 10px;
+width: 16vw;
+padding: 10px;
+box-shadow: 0 1px 10px rgba(0,0,0,0.2);
 }
 .card>a{
-    text-decoration: none;
-    color: black;
+text-decoration: none;
+color: black;
 }
 .img>img{
     width: 100%;
     height:10em;
     border-radius: 10px 10px 0 0;
-    object-fit: cover;
+    object-fit: cover;     
+      
 }
 .card>a>h3{
     margin: 10px 0;
@@ -287,62 +282,62 @@ left: -20px;
         margin: 2rem;
     }
             .column-1{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(2,1fr);
-            grid-column-gap: 2.5vw;
-            grid-row-gap: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-column-gap: 2.5vw;
+        grid-row-gap: 1.5rem;
         }
         .action{
-            display: flex;
-            justify-content: center;
-            border-radius: 1em;
-            box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+        display: flex;
+        justify-content: center;
+        border-radius: 1em;
+        box-shadow: 0 1px 10px rgba(0,0,0,0.2);
         }
         .action-1{
-            grid-area: 1/1/3/2;
+        grid-area: 1/1/3/2;
         }
         .action-2{
-            grid-area: 1/2/2/3;
+        grid-area: 1/2/2/3;
         }
         .action-3{
-            grid-area: 2/2/3/3;
+        grid-area: 2/2/3/3;
         }
         .action-4{
-            grid-area: 1/3/3/4;
+        grid-area: 1/3/3/4;
         }
         .action-5{
-           grid-area:  1/4/2/5;
+        grid-area:  1/4/2/5;
         }
         .action-6{
-            grid-area: 2/4/3/5;
+        grid-area: 2/4/3/5;
         }
         .img-activ{
-            width:100%;
-            height: 11rem;
-            object-fit: cover;
-            border-top-left-radius: 1em;
-            border-top-right-radius: 1em;
+        width:100%;
+        height: 11rem;
+        object-fit: cover;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
         }
         .big-img{
-            height: 27rem;
+        height: 27rem;
         }
 /*footer*/
        footer {
-           display: flex;
-           justify-content: space-around;
-           margin-top: 4em;
-           background-color: #F2F2F2;
-           padding: 2em;
-           font-family: sans-serif;
-           font-size: 1rem
+        display: flex;
+        justify-content: space-around;
+        margin-top: 4em;
+        background-color: #F2F2F2;
+        padding: 2em;
+        font-family: sans-serif;
+        font-size: 1rem
        }
        .footer-link{
-           display: flex;
-           flex-direction: column;
+        display: flex;
+        flex-direction: column;
         }
         .item-footer>h3{
-            margin-left: 0;
+        margin-left: 0;
         }
 /*media querries*/
 
@@ -394,6 +389,17 @@ left: -20px;
             min-width: 30vw;
         }
     }
+    @media screen and (max-width:950px) {
+        #filter{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .block-filter{
+            margin: 10px 0;
+        }
+        
+    }
     @media  screen and (max-width:736px) {
         .cards-2{
             justify-content: center;
@@ -419,9 +425,6 @@ left: -20px;
           }
        .hebergemnent{
            grid-area: 1/2/2/3;          
-       }
-       #filter{
-           flex-wrap: wrap;
        }
        .activities, .hebergement{
           margin-top: 0;
