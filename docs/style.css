@@ -19,31 +19,38 @@ display: flex;
 justify-content: space-between;
 }
 #logo{
-float:left;
 padding: 30px 0;
 margin-top: 30px;
 }
 nav{
-display: flex;
-justify-content: space-between;
-width: 950vw;
-height: 200px;
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: 1fr;
+width: 95vw;
 margin: 0 2.5vw;
 }
 #sign-up{
 font-weight: bold;
 color: #0065FC;
-justify-self: end;
 padding-right: 10px;
 margin-top: 3em;
+grid-area: 1/6/2/7 ;
 }
 .activities,.hebergement{
 margin-top: 50px;
 }
+.activities{
+    grid-area: 1/5/2/6;
+}
+.hebergement{
+    grid-area:1/4/2/5 ;
+}
 nav>a{
 font-weight: bold;
 height: 50px;
-padding-top: 30px;
+padding: 30px;
+text-align: center;
+
 }
 nav>a:hover{
 color: #0065FC;
@@ -281,12 +288,13 @@ color: black;
     .activ-title-section{
         margin: 2rem;
     }
-            .column-1{
+       .column-1{
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
         grid-column-gap: 2.5vw;
         grid-row-gap: 1.5rem;
+        height: 30rem;
         }
         .action{
         display: flex;
@@ -295,29 +303,34 @@ color: black;
         box-shadow: 0 1px 10px rgba(0,0,0,0.2);
         }
         .action-1{
-        grid-area: 1/1/3/2;
+        grid-area: 1/1/4/2;
         }
         .action-2{
-        grid-area: 1/2/2/3;
+        grid-area: 1/2/3/3;
         }
         .action-3{
-        grid-area: 2/2/3/3;
+        grid-area: 3/2/4/3;
         }
         .action-4{
-        grid-area: 1/3/3/4;
+        grid-area: 1/3/4/4;
         }
         .action-5{
         grid-area:  1/4/2/5;
         }
         .action-6{
-        grid-area: 2/4/3/5;
+        grid-area: 2/4/4/5;
         }
         .img-activ{
         width:100%;
-        height: 11rem;
         object-fit: cover;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
+        }
+        .activ-1{
+            height: 14rem;
+        }
+        .activ-2{
+            height: 7.5rem;
         }
         .big-img{
         height: 27rem;
@@ -330,7 +343,7 @@ color: black;
         background-color: #F2F2F2;
         padding: 2em;
         font-family: sans-serif;
-        font-size: 1rem
+        font-size: 1rem;
        }
        .footer-link{
         display: flex;
@@ -345,6 +358,7 @@ color: black;
         .column-1{
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(2,1fr);
+            height: fit-content;
         }
         .action-1{
             grid-area: 1/1/2/2;
@@ -367,6 +381,12 @@ color: black;
         .big-img{
             height: 11rem;
         }
+        .img-activ{
+            height: 14rem;
+        }
+        .action{
+            height: 15;
+        }
         .container-align{
             flex-wrap: wrap-reverse;
         }
@@ -388,6 +408,8 @@ color: black;
         .card{
             min-width: 30vw;
         }
+        
+       
     }
     @media screen and (max-width:950px) {
         #filter{
@@ -407,35 +429,34 @@ color: black;
             left: 0;
             width:80vw;
         }
-    }
-    @media screen and (max-width: 650px){
-       nav{
-           display: grid;
-           grid-template-columns: repeat(2, 1fr);
-           grid-template-rows: repeat(2, 1fr);
-           padding-left: 2em;
-       }
-       nav>a:hover{
-           border-top:0 none ;
-       }
-       #sign-up{
-          grid-area: 2/3/1/2;
-          align-content: center;
-          padding-right: 30px;
-          }
-       .hebergemnent{
-           grid-area: 1/2/2/3;          
-       }
-       .activities, .hebergement{
-          margin-top: 0;
-       }
+        nav{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+        #sign-up{
+            grid-area: 1/3/2/4;
+            margin-left: 50px;
+        }
+        .activities{
+            grid-area: 2/1/3/2;
+            align-content: center;
+        }
+        .hebergement{
+           grid-area:2/3/4/4 ;
+           align-content: center;
+        }
+        footer{
+            
+            font-size: small;  
+            line-height: 1.5rem; 
+                    
+        }
     }
        
     @media screen and (max-width:500px){
         .hebergement ,.activities{
             border-bottom: 4px solid #F2F2F2;
-            position: relative;
-            left: -20px;
             padding-bottom: 30px;
             text-align: center;
             margin-top: 0;
@@ -444,9 +465,11 @@ color: black;
             border-bottom: 4px solid #0065FC;
             color: #0065FC;
         }
+        #logo{
+            margin-left: 20px;
+        }
         h1{
             font-weight: bold;
-            margin: 20px;
             font-size: 25px;
         }
         #search>button{
@@ -514,9 +537,9 @@ color: black;
             font-size: 0.8rem;
         }
         footer{
+            flex-wrap: nowrap;
             flex-direction: column;
-            font-size: small;  
-            line-height: 1.5rem;             
         }
-        
+                
     }
+   
