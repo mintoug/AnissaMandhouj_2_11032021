@@ -318,6 +318,9 @@ color: black;
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;
         }
+        .action>a{
+            width: 100%;
+        }
         .activ-1{
             height: 13rem;
         }
@@ -350,7 +353,7 @@ color: black;
         .column-1{
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(2,1fr);
-            height: fit-content;
+            height: auto;
         }
         .action-1{
             grid-area: 1/1/2/2;
@@ -401,7 +404,6 @@ color: black;
             min-width: 30vw;
         }
         
-       
     }
     @media screen and (max-width:950px) {
         #filter{
@@ -411,6 +413,9 @@ color: black;
         }
         .block-filter{
             margin: 10px 0;
+        }
+        .action>a>h3{
+            font-size:medium;
         }
         
     }
@@ -439,10 +444,8 @@ color: black;
            align-content: center;
         }
         footer{
-            
             font-size: small;  
             line-height: 1.5rem; 
-                    
         }
     }
        
