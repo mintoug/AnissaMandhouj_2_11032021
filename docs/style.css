@@ -433,14 +433,16 @@ color: black;
         }
         #sign-up{
             grid-area: 1/3/2/4;
-            margin-left: 50px;
+            margin-left: 40px;
+            margin-right: 20px;
         }
         .activities{
-            grid-area: 2/1/3/2;
-            align-content: center;
+            grid-area: 2/3/4/4;
+            display: inline-block;
+            
         }
         .hebergement{
-           grid-area:2/3/4/4 ;
+           grid-area:2/1/3/2 ;
            align-content: center;
         }
         footer{
@@ -453,7 +455,7 @@ color: black;
         .hebergement ,.activities{
             border-bottom: 4px solid #F2F2F2;
             padding-bottom: 30px;
-            margin:0 30px ;
+            margin-top: 0;
         }
         .hebergement:hover ,.activities:hover {
             border-bottom: 4px solid #0065FC;
@@ -467,7 +469,6 @@ color: black;
         h1{
             font-weight: bold;
             font-size: 25px;
-            padding: 0;
         }
         #search>button{
             border-radius: 10px;
