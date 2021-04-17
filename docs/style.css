@@ -21,13 +21,14 @@ justify-content: space-between;
 #logo{
 padding: 30px 0;
 margin-top: 30px;
+margin-left: 30px;
 }
 nav{
 display: grid;
 grid-template-columns: repeat(6, 1fr);
 grid-template-rows: 1fr;
 width: 95vw;
-margin: 0 2.5vw;
+/* margin: 0 2.5vw; */
 }
 #sign-up{
 font-weight: bold;
@@ -50,7 +51,6 @@ font-weight: bold;
 height: 50px;
 padding: 30px;
 text-align: center;
-
 }
 nav>a:hover{
 color: #0065FC;
@@ -109,7 +109,7 @@ margin: 20Px;
 #filter{
 display: flex;
 justify-content: space-between;
-padding: 30px;
+padding:0 30px;
 width: 80%;
 }   
 .item-filter{
@@ -148,7 +148,6 @@ align-items: center;
 padding: 2em;
 color: #0065FC;
 }
-
 /* star icons*/ 
 .star{
 color: #0065FC;
@@ -156,7 +155,6 @@ color: #0065FC;
 .star-off>.fas{
 color: #DEEBFF;
 }
-
 /* hebergement  section*/
 #hebergement{
 background-color: #F2F2F2;
@@ -190,8 +188,7 @@ color: black;
     height:10em;
     border-radius: 10px 10px 0 0;
     object-fit: cover;     
-      
-}
+ }
 .card>a>h3{
     margin: 10px 0;
 }
@@ -200,12 +197,10 @@ color: black;
 }
 #hebergement>h3{
     padding: 2rem;
-   
 }
 .euro{
     font-weight: 800;
 }
-
 /* to align hebergement and popular*/
 .container-align{
     display: flex;
@@ -216,15 +211,12 @@ color: black;
 .contain{
     display: flex;
     justify-content: space-between;   
-    
-    }    
+     }    
     .title{
     display: flex;
     align-items: center;  
     justify-content: space-evenly;  
-    
     }
-
     #popular{
     width: 35vw;
     background-color: #F2F2F2;
@@ -327,13 +319,13 @@ color: black;
         border-top-right-radius: 1em;
         }
         .activ-1{
-            height: 14rem;
+            height: 13rem;
         }
         .activ-2{
             height: 7.5rem;
         }
         .big-img{
-        height: 27rem;
+        height: 26rem;
         }
 /*footer*/
        footer {
@@ -458,13 +450,14 @@ color: black;
         .hebergement ,.activities{
             border-bottom: 4px solid #F2F2F2;
             padding-bottom: 30px;
-            text-align: center;
-            margin-top: 0;
+            margin:0 30px ;
         }
         .hebergement:hover ,.activities:hover {
             border-bottom: 4px solid #0065FC;
             color: #0065FC;
+            border-top: 0 none;
         }
+
         #logo{
             margin-left: 20px;
         }
